@@ -1,0 +1,33 @@
+{
+  "name": "stylin",
+  "version": "0.1.0",
+  "description": "Sample extension description.",
+  "scripts": {
+    "start": "zem start",
+    "build": "zem build",
+    "clean": "zem clean",
+    "exec": "zem exec",
+    "publish": "zem publish"
+  },
+  "repository": "http://github.com/artemnovichkov/stylin",
+  "author": {
+    "name": "Artem Novichkov",
+    "email": "novichkoff93@gmail.com",
+    "url": "http://github.com/artemnovichkov"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artemnovichkov/stylin/issues"
+  },
+  "homepage": "https://github.com/artemnovichkov/stylin#readme",
+  "zeplin": {
+    "displayName": "Stylin",
+    "projectTypes": [
+      "ios"
+    ],
+    "repository": "http://github.com/artemnovichkov/stylin"
+  },
+  "dependencies": {
+    "zem": "^0.3.5"
+  }
+}
