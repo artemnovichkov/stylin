@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-sh -c "zem $*"
+sh -c "npm install -g zem && zem $*"
