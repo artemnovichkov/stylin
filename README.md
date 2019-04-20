@@ -1,5 +1,10 @@
 # Stylin
 
+```
+[![Zeplin Extension](https://img.shields.io/badge/zeplin-extension-ffbe12.svg?style=flat)](https://extensions.zeplin.io/artemnovichkov/stylin)
+[![Build Status](https://travis-ci.org/artemnovichkov/styin.svg?branch=master)](extensions.zeplin.io)
+```
+
 [Zeplin](https://zeplin.io) extension that generates text style snippets.
 
 ## Getting started
