@@ -10,14 +10,8 @@ action "Build" {
   args = "install"
 }
 
-action "Install zem" {
-  uses = "actions/npm@master"
-  needs = ["Build"]
-  args = "install -g zem"
-}
-
 action "Test" {
-  needs = "Install zem"
+  needs = "Build"
   uses = "actions/npm@master"
   args = "test"
 }
@@ -31,6 +25,6 @@ action "Master" {
 
 action "Publish" {
   needs = "Master"
-  uses = "actions/npm@master"
+  uses = "./action-zem"
   args = "publish"
 }
