@@ -1,6 +1,8 @@
 workflow "Build, Test, and Publish" {
-  on = "release"
-  resolves = ["Publish"]
+  resolves = [
+    "Publish",
+  ]
+  on = "push"
 }
 
 action "Build" {
@@ -8,8 +10,14 @@ action "Build" {
   args = "install"
 }
 
+action "Install zem" {
+  uses = "actions/npm@master"
+  needs = ["Build"]
+  args = "install -g zem"
+}
+
 action "Test" {
-  needs = "Build"
+  needs = "Install zem"
   uses = "actions/npm@master"
   args = "test"
 }
