@@ -3,8 +3,14 @@
  * https://github.com/zeplin/zeplin-extension-documentation
  */
 
-function layer(context, selectedLayer) {
+ import {
+    style,
+    compareStyles,
+    space
+ } from './helpers';
 
+function layer(context, selectedLayer) {
+    return `Hello ${layer.name}.`;
 }
 
 function screen(context, selectedVersion, selectedScreen) {
@@ -16,11 +22,21 @@ function component(context, selectedVersion, selectedComponent) {
 }
 
 function styleguideColors(context, colors) {
-
+    
 }
 
 function styleguideTextStyles(context, textStyles) {
+    var styles = textStyles.map(textStyle => `${style(context.project, textStyle)}`)
+    var code = `
+extension TextStyle {
 
+    ${styles.sort(compareStyles).join(`\n\n` + space(4))}
+}`;
+    return {
+        code: code,
+        language: 'swift',
+        filename: 'TextStyle+App.swift',
+    };
 }
 
 function exportStyleguideColors(context, colors) {
@@ -28,14 +44,7 @@ function exportStyleguideColors(context, colors) {
 }
 
 function exportStyleguideTextStyles(context, textStyles) {
-    const { code: textStyleCode, language } = styleguideTextStyles(context, textStyles);
-    const code = `${comment(context, COPYRIGHT)}\n\n${textStyleCode}`;
-
-    return {
-        code: "Hello, World!",
-        filename: "Styles.swift",
-        language: "swift"
-    };
+    return styleguideTextStyles(context, textStyles)
 }
 
 function comment(context, text) {

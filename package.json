@@ -1,7 +1,7 @@
 {
   "name": "stylin",
   "version": "0.1.0",
-  "description": "Sample extension description.",
+  "description": "Generates text style snippets.",
   "scripts": {
     "start": "zem start",
     "build": "zem build",

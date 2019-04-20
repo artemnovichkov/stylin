@@ -1,0 +1,17 @@
+{
+  "packageName": "stylin",
+  "name": "Stylin",
+  "description": "Sample extension description.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Artem Novichkov",
+    "email": "novichkoff93@gmail.com",
+    "url": "http://github.com/artemnovichkov"
+  },
+  "projectTypes": [
+    "ios"
+  ],
+  "moduleURL": "./main.js",
+  "repository": "http://github.com/artemnovichkov/stylin",
+  "readmeURL": "./README.md"
+}
