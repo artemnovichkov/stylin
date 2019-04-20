@@ -27,4 +27,5 @@ action "Publish" {
   needs = "Master"
   uses = "./action-zem"
   args = "publish"
+  secrets = ["ZEM_TOKEN", "TEST_TOKEN"]
 }
