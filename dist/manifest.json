@@ -1,7 +1,7 @@
 {
   "packageName": "stylin",
   "name": "Stylin",
-  "description": "Sample extension description.",
+  "description": "Generates text style snippets.",
   "version": "0.1.0",
   "author": {
     "name": "Artem Novichkov",
