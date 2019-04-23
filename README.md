@@ -46,6 +46,11 @@ This extension is developed using [zem](https://github.com/zeplin/zem), Zeplin E
 
 To learn more about creating Zeplin extensions, [see documentation](https://github.com/zeplin/zeplin-extension-documentation).
 
+## Thanks
+
+- to [Sacha](t.me/Yahujik) for the logo
+- to [Pasha](t.me/l_okk) for answering my stupid JS questions
+
 ## Authors
 
 Artem Novichkov, novichkoff93@gmail.com
