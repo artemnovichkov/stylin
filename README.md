@@ -1,7 +1,15 @@
-# Stylin
+<p align="center">
+    <img src=".github/stylin.png" width="528" max-width="90%" alt="Stylin" />
+</p>
 
-[![Zeplin Extension](https://img.shields.io/badge/zeplin-extension-ffbe12.svg?style=flat)](https://extensions.zeplin.io/artemnovichkov/stylin)
-[![Build Status](https://travis-ci.org/artemnovichkov/stylin.svg?branch=master)](https://travis-ci.org/artemnovichkov/stylin)
+<p align="center">
+    <a href="https://extensions.zeplin.io/artemnovichkov/stylin">
+        <img src="https://img.shields.io/badge/zeplin-extension-ffbe12.svg?style=flat" alt="Zeplin Extension" />
+    </a>
+    <a href="https://travis-ci.org/artemnovichkov/stylin">
+        <img src="https://travis-ci.org/artemnovichkov/stylin.svg?branch=master" alt="Build Status" />
+    </a>
+</p>
 
 [Zeplin](https://zeplin.io) extension that generates text style snippets.
 
