@@ -1,7 +1,15 @@
-# Stylin
+<p align="center">
+    <img src=".github/stylin.png" width="528" max-width="90%" alt="Stylin" />
+</p>
 
-[![Zeplin Extension](https://img.shields.io/badge/zeplin-extension-ffbe12.svg?style=flat)](https://extensions.zeplin.io/artemnovichkov/stylin)
-[![Build Status](https://travis-ci.org/artemnovichkov/stylin.svg?branch=master)](https://travis-ci.org/artemnovichkov/stylin)
+<p align="center">
+    <a href="https://extensions.zeplin.io/artemnovichkov/stylin">
+        <img src="https://img.shields.io/badge/zeplin-extension-ffbe12.svg?style=flat" alt="Zeplin Extension" />
+    </a>
+    <a href="https://travis-ci.org/artemnovichkov/stylin">
+        <img src="https://travis-ci.org/artemnovichkov/stylin.svg?branch=master" alt="Build Status" />
+    </a>
+</p>
 
 [Zeplin](https://zeplin.io) extension that generates text style snippets.
 
@@ -37,6 +45,11 @@ extension TextStyle {
 This extension is developed using [zem](https://github.com/zeplin/zem), Zeplin Extension Manager. zem is a command line tool that lets you quickly create, test and publish extensions.
 
 To learn more about creating Zeplin extensions, [see documentation](https://github.com/zeplin/zeplin-extension-documentation).
+
+## Thanks
+
+- to [Sacha](https://t.me/Yahujik) for the logo
+- to [Pasha](https://t.me/l_okk) for answering my stupid JS questions
 
 ## Authors
 
