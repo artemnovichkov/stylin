@@ -25,7 +25,7 @@ action "Master" {
 
 action "Publish" {
   needs = "Master"
-  uses = "./action-zem"
+  uses = "artemnovichkov/action-zem@master"
   args = "publish"
   secrets = ["ZEM_TOKEN"]
 }
