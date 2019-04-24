@@ -48,8 +48,8 @@ To learn more about creating Zeplin extensions, [see documentation](https://gith
 
 ## Thanks
 
-- to [Sacha](t.me/Yahujik) for the logo
-- to [Pasha](t.me/l_okk) for answering my stupid JS questions
+- to [Sacha](https://t.me/Yahujik) for the logo
+- to [Pasha](https://t.me/l_okk) for answering my stupid JS questions
 
 ## Authors
 
