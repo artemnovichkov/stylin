@@ -11,7 +11,7 @@
     </a>
 </p>
 
-[Zeplin](https://zeplin.io) extension that generates text style snippets.
+[Zeplin](https://zeplin.io) extension that generates text style snippets. Based on [Texstyle](https://github.com/rosberry/texstyle) framework.
 
 ## Getting started
 
