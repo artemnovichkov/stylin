@@ -25,6 +25,9 @@
     "projectTypes": [
       "ios"
     ],
+    "platforms": [
+      "ios"
+    ],
     "repository": "http://github.com/artemnovichkov/stylin"
   },
   "dependencies": {
