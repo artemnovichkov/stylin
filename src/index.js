@@ -9,24 +9,15 @@
     space
  } from './helpers';
 
-function layer(context, selectedLayer) {
-    return `Hello ${layer.name}.`;
-}
+// New API
 
-function screen(context, selectedVersion, selectedScreen) {
+function container(context) {
+    return context.styleguide == undefined ? context.project : context.styleguide;
+  }
 
-}
-
-function component(context, selectedVersion, selectedComponent) {
-
-}
-
-function styleguideColors(context, colors) {
-    
-}
-
-function styleguideTextStyles(context, textStyles) {
-    var styles = textStyles.map(textStyle => `${style(context.project, textStyle)}`)
+function textStyles(context) {
+    const containerTextStyles = container(context).textStyles;
+    var styles = containerTextStyles.map(textStyle => `${style(textStyle)}`)
     var code = `
 extension TextStyle {
 
@@ -39,25 +30,33 @@ extension TextStyle {
     };
 }
 
-function exportStyleguideColors(context, colors) {
-
+function exportTextStyles(context) {
+    return textStyles(context);
 }
 
-function exportStyleguideTextStyles(context, textStyles) {
-    return styleguideTextStyles(context, textStyles)
+// Deprecated API
+
+ function styleguideTextStyles(context, oldTextStyles) {
+    var styles = oldTextStyles.map(textStyle => `${style(context.project, textStyle)}`)
+    var code = `
+extension TextStyle {
+
+    ${styles.sort(compareStyles).join(`\n\n` + space(4))}
+}`;
+    return {
+        code: code,
+        language: 'swift',
+        filename: 'TextStyle+App.swift',
+    };
 }
 
-function comment(context, text) {
-
+function exportStyleguideTextStyles(context, oldTextStyles) {
+    return styleguideTextStyles(context, oldTextStyles)
 }
 
 export default {
-    layer,
-    screen,
-    component,
-    styleguideColors,
+    textStyles,
+    exportTextStyles,
     styleguideTextStyles,
-    exportStyleguideColors,
     exportStyleguideTextStyles,
-    comment
 };

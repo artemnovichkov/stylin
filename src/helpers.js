@@ -1,4 +1,4 @@
-export function style(project, textStyle) {
+export function style(textStyle) {
     var code = `static let ${camelize(textStyle.name)}: TextStyle = {
         let style = TextStyle()
         style.font = .${fontName(textStyle.fontFamily)}(ofSize: ${textStyle.fontSize}, weight: .${textStyle.weightText})\n`
@@ -6,11 +6,11 @@ export function style(project, textStyle) {
         var kerning = Math.round(textStyle.letterSpacing * 100) / 100
         code += space(8) + `style.kerning = ${kerning}\n`
     }
-    var projectColor = project.findColorEqual(textStyle.color)
-    if (projectColor == undefined) {
+    var color = textStyle.color
+    if (color == undefined) {
         code += space(8) + `style.color = .init(red: ${textStyle.color.r} / 255, green: ${textStyle.color.g} / 255, blue: ${textStyle.color.b} / 255, alpha: ${textStyle.color.a})\n`
     } else {
-        code += space(8) + `style.color = .${projectColor.name}\n`
+        code += space(8) + `style.color = .${color.name}\n`
     }
     if (textStyle.textAlign != undefined) {
         code += space(8) + `style.alignment = .${alignment(textStyle.textAlign)}\n`
