@@ -2,7 +2,7 @@
   "packageName": "stylin",
   "name": "Stylin",
   "description": "Generates text style snippets.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": {
     "name": "Artem Novichkov",
     "email": "novichkoff93@gmail.com",
@@ -11,7 +11,7 @@
   "projectTypes": [
     "ios"
   ],
-  "moduleURL": "./main.js",
+  "moduleURL": "./main.a8ee7c5b.js",
   "repository": "http://github.com/artemnovichkov/stylin",
   "readmeURL": "./README.md"
 }
