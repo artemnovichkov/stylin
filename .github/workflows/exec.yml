@@ -1,0 +1,19 @@
+on: push
+name: Run exec
+jobs:
+  build:
+    name: Exec
+    runs-on: macOS-latest
+    steps:
+    - name: Install npm
+      uses: actions/npm@master
+      with:
+        args: install
+    - name: Install zem
+      uses: actions/npm@master
+      with:
+        args: install -g zem
+    - name: Exec
+      uses: actions/npm@master
+      with:
+        args: npm run exec
