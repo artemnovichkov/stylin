@@ -16,4 +16,4 @@ jobs:
     - name: Exec
       uses: actions/npm@master
       with:
-        args: npm run exec
+        args: run exec
