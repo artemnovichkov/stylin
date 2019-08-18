@@ -3,7 +3,7 @@ name: Run exec
 jobs:
   build:
     name: Exec
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Install npm
       uses: actions/npm@master
