@@ -5,6 +5,7 @@ jobs:
     name: Exec
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v1
     - name: Install npm
       uses: actions/npm@master
       with:
