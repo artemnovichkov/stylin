@@ -30,7 +30,7 @@
     ],
     "repository": "http://github.com/artemnovichkov/stylin"
   },
-  "dependencies": {
-    "zem": "^0.3.5"
+  "devDependencies": {
+    "zem": "^0.4.4"
   }
 }

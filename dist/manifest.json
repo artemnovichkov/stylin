@@ -8,10 +8,10 @@
     "email": "novichkoff93@gmail.com",
     "url": "http://github.com/artemnovichkov"
   },
-  "projectTypes": [
+  "platforms": [
     "ios"
   ],
-  "moduleURL": "./main.a8ee7c5b.js",
+  "moduleURL": "./main.0d41e9e5.js",
   "repository": "http://github.com/artemnovichkov/stylin",
   "readmeURL": "./README.md"
 }

@@ -16,8 +16,9 @@ function container(context) {
   }
 
 function textStyles(context) {
-    const containerTextStyles = container(context).textStyles;
-    var styles = containerTextStyles.map(textStyle => `${style(textStyle)}`)
+    const textStylesContainer = container(context);
+    const containerTextStyles = textStylesContainer.textStyles;
+    var styles = containerTextStyles.map(textStyle => `${style(textStyle, textStylesContainer)}`)
     var code = `
 extension TextStyle {
 
