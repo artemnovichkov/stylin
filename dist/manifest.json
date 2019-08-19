@@ -2,7 +2,7 @@
   "packageName": "stylin",
   "name": "Stylin",
   "description": "Generates text style snippets.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "Artem Novichkov",
     "email": "novichkoff93@gmail.com",
