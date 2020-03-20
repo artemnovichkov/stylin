@@ -11,14 +11,26 @@
 
 // New API
 
-function container(context) {
-    return context.styleguide == undefined ? context.project : context.styleguide;
+function contextTextStyles(context) {
+    let textStyles = []
+    let container = null
+    if (context.styleguide == undefined) {
+        textStyles = textStyles.concat(context.project.textStyles)
+        if (context.project.linkedStyleguide != undefined) {
+            textStyles = textStyles.concat(context.project.linkedStyleguide.textStyles)
+        }
+        container = context.project
+    }
+    else {
+        container = context.styleguide
+        textStyles = textStyles.concat(context.styleguide.textStyles)
+    }
+    return { container, textStyles }
   }
 
 function textStyles(context) {
-    const textStylesContainer = container(context);
-    const containerTextStyles = textStylesContainer.textStyles;
-    var styles = containerTextStyles.map(textStyle => `${style(textStyle, textStylesContainer)}`)
+    const { container, textStyles } = contextTextStyles(context)
+    var styles = textStyles.map(textStyle => `${style(textStyle, container)}`)
     var code = `
 extension TextStyle {
 
