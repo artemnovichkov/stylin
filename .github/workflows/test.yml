@@ -1,8 +1,8 @@
 on: push
-name: Run exec
+name: Run tests
 jobs:
   build:
-    name: Exec
+    name: Test
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2.1.0
@@ -10,4 +10,4 @@ jobs:
       with:
         node-version: '10.x'
     - run: npm install -g zem
-    - run: npm run exec
+    - run: npm test
