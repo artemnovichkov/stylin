@@ -31,6 +31,6 @@
     "repository": "http://github.com/artemnovichkov/stylin"
   },
   "devDependencies": {
-    "zem": "^0.4.4"
+    "zem": "^1.0.4"
   }
 }
