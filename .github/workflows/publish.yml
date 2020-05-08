@@ -12,7 +12,7 @@ jobs:
     - name: Test
     - run: npm test
     - name: Publish
-      uses: artemnovichkov/action-zem@v0.3
+      uses: artemnovichkov/action-zem@v0.3.1
       env:
         ZEM_ACCESS_TOKEN: ${{ secrets.ZEM_ACCESS_TOKEN }}
       with:
